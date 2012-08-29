@@ -47,6 +47,7 @@ setup(
         'plone.app.dexterity',
         'plone.app.theming',
         'setuptools',
+        'requests', # for github integration
     ],
     extras_require={
         'test': [
