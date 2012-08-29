@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<registry>
+  <record name="plone.contribute.githubtoken">
+    <field type="plone.registry.field.ASCIILine">
+      <description>API Token for </description>
+      <title>GitHub API Token</title>
+      <value_type type="plone.registry.field.ASCIILine"/>
+    </field>
+    <value />
+  </record>
+</registry>
