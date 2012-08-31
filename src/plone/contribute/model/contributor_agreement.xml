@@ -33,6 +33,7 @@
     <field name="contributor_agreement" type="plone.namedfile.field.NamedFile">
       <description>Please attach your *signed* contributor agreement.</description>
       <title>Contributor Agreement</title>
+      <required>False</required>
     </field>
     <field name="employer_rights" type="zope.schema.Bool" form:widget="z3c.form.browser.radio.RadioFieldWidget" xmlns:form="http://namespaces.plone.org/supermodel/form">
       <description>If you are employed to do programming or have made an agreement with your employer, school or anyone else saying it owns software you write, then we must have a signed writing from them disclaiming any rights they may have to the software. The disclaimer should be signed by a vice president, general manager, or anyone else who is authorized to assign software owned by them.</description>
