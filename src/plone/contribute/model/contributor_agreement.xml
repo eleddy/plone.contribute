@@ -1,0 +1,49 @@
+<model xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="legal_name" type="zope.schema.TextLine">
+      <description>Please enter your full legal name.</description>
+      <title>Legal Name</title>
+    </field>
+    <field name="email_address" type="zope.schema.TextLine">
+      <description>Please confirm your email address. We will use this to communicate any issues with your agreement, as well as docs for getting started in Plone core development.</description>
+      <min_length>5</min_length>
+      <title>Email Address</title>
+    </field>
+    <field name="github_user_id" type="zope.schema.TextLine">
+      <description>Our core process works through GitHub. Please list your github username so that we can give you access to core repositories.</description>
+      <title>GitHub User ID</title>
+    </field>
+    <field name="plone_org_login_id" type="zope.schema.TextLine">
+      <description>Enter your plone.org username</description>
+      <title>Plone.org Login ID</title>
+    </field>
+    <field name="year_of_birth" type="zope.schema.TextLine">
+      <description>For copyright, please enter your year of birth.</description>
+      <title>Year of Birth</title>
+    </field>
+    <field name="country_of_citizenship" type="zope.schema.Text">
+      <description>For copyright, please list any countries of citizenship.</description>
+      <title>Country of Citizenship</title>
+    </field>
+    <field name="published_work" type="zope.schema.Text">
+      <description>Please detail any work that has already been published to be included, including any modifications. If you have not committed any changes yet, you may leave this blank.</description>
+      <required>False</required>
+      <title>Published Work</title>
+    </field>
+    <field name="contributor_agreement" type="plone.namedfile.field.NamedFile">
+      <description>Please attach your *signed* contributor agreement.</description>
+      <title>Contributor Agreement</title>
+    </field>
+    <field name="employer_rights" type="zope.schema.Bool" form:widget="z3c.form.browser.radio.RadioFieldWidget" xmlns:form="http://namespaces.plone.org/supermodel/form">
+      <description>If you are employed to do programming or have made an agreement with your employer, school or anyone else saying it owns software you write, then we must have a signed writing from them disclaiming any rights they may have to the software. The disclaimer should be signed by a vice president, general manager, or anyone else who is authorized to assign software owned by them.</description>
+      <title>Does your employer have rights to any code you produce?</title>
+    </field>
+    <field name="employer_disclaimer" type="plone.namedfile.field.NamedFile">
+      <description>If you answered "yes" to the previous question, please upload your employers disclaimer here. The disclaimer should be signed by a vice president, general manager, or anyone else who is authorized to assign software owned by them. If they say they have an intellectual property interest that could conflict with the use of the program, then please put us in touch with a suitable representative, so that we can discuss with them what to do about it.
+
+IMPORTANT: When you talk to your employer, don't fail to show them the sample disclaimer below, or a disclaimer with the details filled in for your specific case. Employers are usually willing to sign a disclaimer without any fuss. Less specific requests may cause long and unnecessary delay.</description>
+      <required>False</required>
+      <title>Employer Disclaimer</title>
+    </field>
+  </schema>
+</model>

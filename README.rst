@@ -15,3 +15,18 @@ Plone Todo list application tutorial
 .. topic:: Summary
 
      An add on product for collecting contributor agreements. BLERGH.
+
+
+Getting Started
+===============
+
+GitHub integration requires a token. You can do all the three legged oauth 
+in your own script that you like, or you can just run the script in the root
+of this install. You will need access to the plone core repo from your github 
+username and account.
+
+.. code:: bash
+
+    ./gettoken.sh
+
+
