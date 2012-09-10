@@ -46,5 +46,11 @@ IMPORTANT: When you talk to your employer, don't fail to show them the sample di
       <required>False</required>
       <title>Employer Disclaimer</title>
     </field>
+    <field name="mentor" type="zope.schema.TextLine">
+      <description>Every new plone contributor is assigned a mentor. Rendering this should link to their profile.</description>
+      <title>Mentors plone.org username</title>
+      <required>False</required>
+    </field>
+
   </schema>
 </model>
