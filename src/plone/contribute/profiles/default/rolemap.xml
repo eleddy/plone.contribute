@@ -2,7 +2,7 @@
 <rolemap>
    <roles>
     <role name="Mentor"/>
-    <role name="Sprint Coordinator"/>
+    <role name="Agreement Coordinator"/>
   </roles>
   <permissions>
     <permission name="Manage users" acquire="True">
@@ -10,7 +10,7 @@
     </permission>
     <permission name="Contribute: Approve Agreement" acquire="False">
         <role name="Mentor" />
-        <role name="Sprint Coordinator" />
+        <role name="Agreement Coordinator" />
         <role name="Manager" />
         <role name="Site Administrator"/>
     </permission>

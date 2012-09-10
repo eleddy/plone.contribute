@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="plone.contribute.setup_teams"
+               version="20120805"
+               handler="plone.contribute.setuphandlers.setup_teams"
+               title="plone.contribute.setup_teams">
+    Make sure some basic assumptions about team setup are handled
+  </import-step>
+</import-steps>
